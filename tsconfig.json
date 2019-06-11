@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"*": [
+				"types/*"
+			]
+		},
+		"outDir": "./dist/",
+		"module": "es6",
+		"lib": [
+			"es6"
+		],
+		"esModuleInterop": true
+	},
+	"include": [
+		"./src/index.ts",
+		"./types"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
