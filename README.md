@@ -1,7 +1,7 @@
 ## Kanbanize API
 This is a thin wrapper around the Kanbanize v1 API, written for (now) nodejs. 
 
-I intend to allow the module to be consumed in web contexts as well.
+I intend to allow the module to be consumed in web contexts as well
 
 ## Todo
 1. Test whether it works in a browser
@@ -37,71 +37,71 @@ example();
 See [Type Definitions](types/types.d.ts) for method parameter and return shapes.
 
 ```
- getProjectsAndBoards(): Promise<projectsAndBoards>;
+getProjectsAndBoards(): Promise<projectsAndBoards>;
 ```
 ```
-	getBoardStructure(params: boardidRequired): Promise<boardStructure>
+getBoardStructure(params: boardidRequired): Promise<boardStructure>
 ```
 ```
-	getFullBoardStructure(params: boardidRequired): Promise<fullBoardStructure>
+getFullBoardStructure(params: boardidRequired): Promise<fullBoardStructure>
 ```
 ```
-	getBoardSettings(params: boardidRequired): Promise<boardSettings>
+getBoardSettings(params: boardidRequired): Promise<boardSettings>
 ```
 ```
-	getBoardActivities(params: boardActivityParameters): Promise<boardActivityOutput>
+getBoardActivities(params: boardActivityParameters): Promise<boardActivityOutput>
 ```
 ```
-	createNewTask(params: createNewTaskParameters): Promise<createNewTaskOutput>
+createNewTask(params: createNewTaskParameters): Promise<createNewTaskOutput>
 ```
 ```
-	deleteTask(params: BasicTaskParameters): Promise<taskOperationOutput>
+deleteTask(params: BasicTaskParameters): Promise<taskOperationOutput>
 ```
 ```
-	getTaskDetails(params: getTaskDetailsParamters): Promise<getTaskDetailsOutput>
+getTaskDetails(params: getTaskDetailsParamters): Promise<getTaskDetailsOutput>
 ```
 ```
-	getAllTasks(params: getAllTaskParameters): Promise<getAllTasksOutput>
+getAllTasks(params: getAllTaskParameters): Promise<getAllTasksOutput>
 ```
 ```
-	addComment(params: addCommentParameters): Promise<addCommentOutput>
+addComment(params: addCommentParameters): Promise<addCommentOutput>
 ```
 ```
-	moveTask(params: moveTaskParameters): Promise<taskOperationOutput>
+moveTask(params: moveTaskParameters): Promise<taskOperationOutput>
 ```
 ```
-	editTask(params: editTaskParameters): Promise<taskOperationOutput>
+editTask(params: editTaskParameters): Promise<taskOperationOutput>
 ```
 ```
-	blockTask(params: blockTaskParameters): Promise<taskOperationOutput>
+blockTask(params: blockTaskParameters): Promise<taskOperationOutput>
 ```
 ```
-	addSubtask(params: addSubtaskParameters): Promise<addSubtaskOutput>
+addSubtask(params: addSubtaskParameters): Promise<addSubtaskOutput>
 ```
 ```
-	editSubtask(params: editSubtaskParameters): Promise<taskOperationOutput>
+editSubtask(params: editSubtaskParameters): Promise<taskOperationOutput>
 ```
 ```
-	logTime(params: logTimeParameters): Promise<logTimeOutput>
+logTime(params: logTimeParameters): Promise<logTimeOutput>
 ```
 ```
-	getLinks(params: getLinksParameters): Promise<getLinksOutput>
+getLinks(params: getLinksParameters): Promise<getLinksOutput>
 ```
 ```
-	editLink(params: editLinkParameters): Promise<taskOperationOutput>
+editLink(params: editLinkParameters): Promise<taskOperationOutput>
 ```
 ```
-	archiveTask(params: archiveTaskParameters): Promise<taskOperationOutput>
+archiveTask(params: archiveTaskParameters): Promise<taskOperationOutput>
 ```
 ```
-	editCustomFields(params: editCustomFieldsParameter): Promise<taskOperationOutput>
+editCustomFields(params: editCustomFieldsParameter): Promise<taskOperationOutput>
 ```
 ```
-	getAttachment(params: getAttachmentParameters): Promise<any>
+getAttachment(params: getAttachmentParameters): Promise<any>
 ```
 ```
-	getLogTimeActivities(params: getLogTimeActivitiesParameters): Promise<getLogTimeActivitiesOutput> 
+getLogTimeActivities(params: getLogTimeActivitiesParameters): Promise<getLogTimeActivitiesOutput> 
 ```
 ```
-	getTasksWithLogTime(params: getTasksWithLogTimeParameters): Promise<getTasksWithLogTimeOutput>
+getTasksWithLogTime(params: getTasksWithLogTimeParameters): Promise<getTasksWithLogTimeOutput>
 ```
